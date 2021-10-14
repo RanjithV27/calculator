@@ -17,6 +17,13 @@ item.addEventListener('click',(e)=>
         screen="";
         scrn.value=screen;
     }
+    else if(btn=='<-')
+    {
+        number=scrn.value;
+        newlen=number.length-1;
+        newnum=number.substring(0,newlen);
+        scrn.value=newnum;
+    }
     else
     {
         scrn.value+=e.target.innerText;
